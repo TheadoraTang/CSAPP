@@ -1,0 +1,4 @@
+mov $0x4090a177, %rdi
+movabs $0x0000555555555f44, %rsi
+pushq %rsi
+ret

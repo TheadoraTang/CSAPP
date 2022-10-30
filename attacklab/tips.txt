@@ -1,0 +1,11 @@
+cat answer1.txt | ./hex2raw > answer1_raw1.txt
+gdb ctarget -ex 'run -q < answer1_raw1.txt'
+
+0000000000002123 <getval_436>:
+    2123:	f3 0f 1e fa          	endbr64 
+    2127:	b8 41 58 c3 22       	mov    $0x22c35841,%eax
+    212c:	c3 
+000000000000214e <addval_238>:
+    214e:	f3 0f 1e fa          	endbr64 
+    2152:	8d 87 f8 48 89 c7    	lea    -0x3876b708(%rdi),%eax
+    2158:	c3 
